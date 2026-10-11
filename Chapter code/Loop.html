@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+
+       // while loop
+
+        let num = 1; // Inilalization
+        while(num <= 10){ // condition
+            console.log(num);
+            num++; // updating
+        }
+
+        // do while loop
+
+        let num1 = 0;
+        do{
+            console.log(num);
+            num1++;
+        } while (num1 < 5);
+
+
+        // for loop
+
+        for (let num = 1; num <= 10; num++){
+            console.log(num);
+        }
+
+
+        let nums = [1,3,5,7,8,55];
+        for (let index = 0; index < nums.length; index++) {
+            console.log(nums[index]);
+        }
+
+
+        // Accumulator Pattern
+
+        let num2 = [3,6,5,8,9,4,3,4,7,55,33];
+        let sum = 0;
+        for (let i = 0; i < num2.length; i++);{
+            sum += num2[i];
+        }
+        console.log(` sum of the array is ${sum}`);
+
+        let squares = [];
+        for (let i = 0; i < num2.length; i++) {
+            squares.push(num2[i] * num2[i]);
+        }
+        console.log(squares);
+
+
+        // Break abd continue
+
+        for (let i = 0; i < 44; i++){
+            console.log(i);
+            if (i === 22){
+                break;
+            }
+        }
+
+
+        let arr = [3,6,5,8,9,4,3,4,7,55,33];
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] === 8){
+                console.log(`Number found at index ${i}`);
+                break;
+            }
+            console.log('still looking');
+        }
+
+
+        for (let i = 1; i <= 25; i++){
+            if (i % 2 == 0){
+              continue;
+            }
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

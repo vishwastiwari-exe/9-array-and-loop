@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrya</title>
+</head>
+<body>
+    <script>
+       let numbers = [1,2,3,4,5,7,9];
+       console.log(numbers);
+       console.log(numbers.length);
+       console.log(numbers[2]);
+
+
+       let obj ={ikl: 93};
+       let doosra = [1, true, null, 'asfasd'];
+       console.log(numbers[3]);
+       console.log(typeof doosra)
+
+
+       console.log(Arrya.isArrye(doosra));
+       console.log(Arrya.isArrya(obj));
+
+
+    //    push and pup
+
+       let arr = [1,2,3,4,5];
+       console.log(arr);
+       arr.push(8);
+       console.log(arr);
+       console.log('popped' + arr.pop);
+       console.log(arr);
+       console.log('popped' + arr.pop);
+       console.log(arr);
+
+
+
+    //    shift and unshift
+
+       let arry = [1,4,6,9];
+       console.log(arry);
+       arry.shift();
+       console.log(arry);
+       console.log('unshift' + arry.unshift);
+       console.log(arry);
+
+
+    //    splice
+
+       let arr4 = [3,4,5,7,9];
+       console.log(arr4);
+       arr4.splice(1,2);
+       console.log(arr4);
+
+
+       // toString
+
+        let arr1 = [3,4,5,7,9];
+       console.log(arr1.toString());
+
+
+       // Sort
+
+        let arr2 = [7,4,9,7,1];
+       console.log(arr2);
+       arr2.sort();
+       console.log(arr2);
+
+       // value of
+
+       console.log(arr2.valueOf());
+
+      // reference
+
+       let arr3 = arr2;
+       arr3[0] = 99;
+       console.log(arr2);
+
+
+       //De-Structuring
+
+       let  [a,b,c,d] = arr2;
+       console.log(a + ' ' + b + ' ' + c + ' ' + d + ' ');
+    </script>
+</body>
+</html>
